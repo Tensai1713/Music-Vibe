@@ -1,77 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fredoka:wght@300..700&display=swap');
 
-/* .fredoka-<uniquifier> {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
-
-/* .eb-garamond-<uniquifier> {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
-button:hover {
-  cursor: pointer;
-}
-
-
-body {
+ul {
   margin: 0;
-  font-family: "Fredoka", sans-serif;
-  background-color: #f3f3f3;
-  font-weight: 400;
+  padding: 0;
+  list-style-type: none;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 
 p {
   margin: 0;
 }
 
-a {
-  text-decoration:none;
+.btn:hover {
+  cursor: pointer;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  background-color: #f3f3f3;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.parallax {
+  background-image: url('./img/bg.png'); /* Замените путь на ваш файл */
+  background-attachment: fixed; /* Эффект параллакса */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Заполнение секции */
+}
+
+.link {
+  text-decoration: none;
   color: #212126;
 }
 
-h1 {
-  margin: 0;
-  font-family: 'EB Garamond', sans-serif;
+.title {
   font-weight: 400;
-  line-height: auto;
-}
-
-h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: 400;
-  font-family: "Fredoka", sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type:none;
+.main__bg {
+  background-color: #333333;
 }
 
-
-
 .main {
-  background-color: #333333;
+  position: relative;
   color: #f3f3f3;
 }
 
 .logo {
   width: 93px;
 }
-
-
 
 /* ------------------------header----------------------- */
 
@@ -81,16 +67,16 @@ ul {
   font-size: 26px;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 }
-
 
 .header__city {
   display: flex;
   margin-left: 45px;
-  height: 35px;
 }
 
-.header__city img {
+.header__map-svg {
   width: 30px;
   height: fit-content;
 }
@@ -99,7 +85,7 @@ ul {
   margin-left: 100px;
 }
 
-.header__nav ul{
+.header__nav-list {
   display: flex;
   gap: 30px;
 }
@@ -117,16 +103,15 @@ ul {
   text-align: center;
 }
 
-.welcome h1 {
+.welcome__title {
+  font-family: 'EB Garamond', serif;
   font-size: 80px;
+  font-weight: 400;
 }
 
-.welcome h2 {
+.welcome__subtitle {
+  font-weight: 400;
   font-size: 30px;
-}
-
-.welcome a {
-  background-color: #f3f3f3;
 }
 
 .discount-link {
@@ -135,21 +120,22 @@ ul {
   font-size: 20px;
   display: inline-block;
   margin: 20px 0;
+  background-color: #f3f3f3;
 }
 
 .slider__card {
   width: 235px;
-  border: 1px solid #f3f3f3 ;
+  border: 1px solid #f3f3f3;
   position: relative;
   border-radius: 10px;
   padding-top: 15px;
+  background-color: #333333a8;
 }
 
 .slider__favorite {
   width: 40px;
   position: absolute;
-  
-  margin: 10px 25px;
+  margin: 0 25px;
 }
 
 .slider__card-price {
@@ -192,18 +178,23 @@ ul {
   position: absolute;
 }
 
-
 .bestsellers {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
+}
+
+.bestsellers__title {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .about {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 
-.about p {
+.about__text {
   width: 600px;
   text-align: left;
   line-height: 1.6;
@@ -214,13 +205,13 @@ ul {
   display: flex;
   justify-content: center;
 }
-.about__wrap img {
+
+.about__imgs {
   margin-left: 50px;
 }
 
-
 .review {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -228,7 +219,7 @@ ul {
 .review__cards-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0 400px;
+  padding: 0 160px;
 }
 
 .review__card {
@@ -240,9 +231,9 @@ ul {
   overflow: auto;
 }
 
-.review__card img {
+.avatar {
   margin: 20px 0;
-  width: 100px; ;
+  width: 100px;
 }
 
 .review__name {
@@ -272,9 +263,6 @@ ul {
 .footer {
   font-size: 20px;
   margin-top: 50px;
-}
-
-.footer {
   display: flex;
   gap: 50px;
   justify-content: center;
@@ -287,7 +275,7 @@ ul {
   gap: 20px;
 }
 
-.footer__call img {
+.footer__logo {
   width: 90px;
   display: inline-block;
 }
@@ -302,7 +290,7 @@ ul {
   font-size: 20px;
 }
 
-.footer h3 {
+.footer__title {
   margin: 0;
   color: #212126;
   font-family: 'Fredoka', sans-serif;
@@ -311,7 +299,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer__list li {
+.footer__item {
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 15px;
@@ -319,7 +307,7 @@ ul {
 
 .footer__socials {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 

@@ -6,34 +6,33 @@
   <title>Music Vibe</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
   <header class="header">
-      <a href="./index.html"><img class="logo" src="./img/svg/logo.svg" alt=""></a>
+      <a class="link" href="./index.html"><img class="logo" src="./img/svg/logo.svg" alt=""></a>
       <div class="header__city">
-        <img src="./img/svg/map.svg" alt="">
+        <img class="header__map-svg" src="./img/svg/map.svg" alt="">
         <p>г. Москва</p>
       </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li><a href="#!">О нас</a></li>
-            <li><a href="#!">Акции</a></li>
-            <li><a href="#!">Категории</a></li>
-            <li><a href="#!">Контакты</a></li>
+            <li><a class="link" href="#!">О нас</a></li>
+            <li><a class="link" href="#!">Акции</a></li>
+            <li><a class="link" href="#!">Категории</a></li>
+            <li><a class="link" href="#!">Контакты</a></li>
           </ul>
         </nav>
         <div class="header__controls">
-          <a href="#!"><img src="./img/svg/favorite.svg" alt=""></a>
-          <a href="#!"><img src="./img/svg/basket.svg" alt=""></a>
-          <a href="#!"><img src="./img/svg/account.svg" alt=""></a>
+          <a class="link" href="#!"><img src="./img/svg/favorite.svg" alt=""></a>
+          <a class="link" href="#!"><img src="./img/svg/basket.svg" alt=""></a>
+          <a class="link" href="#!"><img src="./img/svg/account.svg" alt=""></a>
         </div>
   </header>
 
-  <main class="main">
-    
-      <section class="welcome">
-        <h1>Music Vibe</h1>
-        <h2>Музыкальный интернет-магазин</h2>
-        <a class="discount-link" href="">Купить со скидкой</a>
+  <main class="main main__bg">
+      <section class="welcome parallax">
+        <h1 class="welcome__title" >Music Vibe</h1>
+        <h2 class="welcome__subtitle" >Музыкальный интернет-магазин</h2>
+        <a class="link discount-link" href="">Купить со скидкой</a>
         <div class="slider">
             <img class="slider__arrow-left" src="./img/svg/arrow-left.svg" alt="">
             <img class="slider__arrow-right" src="./img/svg/arrow-right.svg" alt="">
@@ -80,8 +79,8 @@
         </div>
         </section>
 
-        <section class="bestsellers">
-        <h3 class=>Хиты продаж</h3>
+        <section class="bestsellers parallax">
+        <h3 class="title bestsellers__title" >Хиты продаж</h3>
         <div class="slider">
             <img class="slider__arrow-left" src="./img/svg/arrow-left.svg" alt="">
             <img class="slider__arrow-right" src="./img/svg/arrow-right.svg" alt="">
@@ -124,32 +123,32 @@
         </div>
         </section>
 
-        <section class="about">
-          <h3>О нас</h3>
+        <section class="about parallax">
+          <h3 class="title about__title" >О нас</h3>
           <div class="about__wrap">
-            <p>Музыкальный интернет-магазин Music Vibe открыт с 2024 года. На данный момент у нас есть филиалы в нескольких городах России. <br>
+            <p class="about__text">Музыкальный интернет-магазин Music Vibe открыт с 2024 года. На данный момент у нас есть филиалы в нескольких городах России. <br>
             Сотрудничаем с такими группами как: The Hatters, Imagine Dragons, Linkin Park и многие другие.</p>
-            <img src="./img/index-img/about-imgs.png" alt="">
+            <img class="about__imgs" src="./img/index-img/about-imgs.png" alt="">
           </div>
         </section>
 
-        <section class="review">
-          <h3>Отзывы</h3>
+        <section class="review parallax">
+          <h3 class="title review__title" >Отзывы</h3>
           <div class="review__cards-wrap">
             <article class="review__card">
-              <img src="./img/index-img/rewview-avatar-1.png" alt="">
+              <img class="avatar" src="./img/index-img/rewview-avatar-1.png" alt="">
               <p class="review__name">Андрей Маяковский</p>
               <p class="review__subtitle">Барабанщик</p>
               <p class="review__text">Купил барабаную установку. Очень качественное оборудывание.</p>
             </article>
             <article class="review__card">
-              <img src="./img/index-img/rewview-avatar-2.png" alt="">
+              <img class="avatar" src="./img/index-img/rewview-avatar-2.png" alt="">
               <p class="review__name">Иван Андреев</p>
               <p class="review__subtitle">Клавишник</p>
               <p class="review__text">Брал ребенку подарок. Синтезатор выдает чистые звуки и поражает количеством встроенных инструментов.</p>
             </article>
             <article class="review__card">
-              <img src="./img/index-img/rewview-avatar-3.png" alt="">
+              <img class="avatar" src="./img/index-img/rewview-avatar-3.png" alt="">
               <p class="review__name">Дмитрий Шелковин</p>
               <p class="review__subtitle">Гитарист</p>
               <p class="review__text">Сделал заказ каподастра. Пришел очень быстро и в хорошем виде. Отличный сервис.</p>
@@ -160,40 +159,40 @@
 
   <footer class="footer">
       <div class="footer__call">
-        <a href="tel:+74955765590">+7 (495) 576-55-90</a>
-        <a href="mailto:info@musicvibe.ru">info@musicvibe.ru</a>
+        <a class="link" href="tel:+74955765590">+7 (495) 576-55-90</a>
+        <a class="link" href="mailto:info@musicvibe.ru">info@musicvibe.ru</a>
         <button class="footer__call-btn" href="#!">Связаться с нами</button>
-        <a href="./index.html"><img src="./img/svg/logo.svg" alt=""></a>
+        <a class="link footer__logo" href="./index.html"><img src="./img/svg/logo.svg" alt=""></a>
       </div>
       <div class="footer__categories">
-        <h3>Категории</h3>
+        <h3 class="footer__title" >Категории</h3>
         <ul class="footer__list">
-          <li><a href="">Гитары</a></li>
-          <li><a href="">Ударные инструменты</a></li>
-          <li><a href="">Клавишные инструменты</a></li>
-          <li><a href="">Духовые</a></li>
-          <li><a href="">Смычковые</a></li>
-          <li><a href="">Аксессуары</a></li>
-          <li><a href="">Микрофоны и наушники</a></li>
-          <li><a href="">Стойки, подставки, рэки</a></li>
-          <li><a href="">Тюнеры, метрономы, камертоны</a></li>
+          <li class="footer__item"><a class="link" href="">Гитары</a></li>
+          <li class="footer__item"><a class="link" href="">Ударные инструменты</a></li>
+          <li class="footer__item"><a class="link" href="">Клавишные инструменты</a></li>
+          <li class="footer__item"><a class="link" href="">Духовые</a></li>
+          <li class="footer__item"><a class="link" href="">Смычковые</a></li>
+          <li class="footer__item"><a class="link" href="">Аксессуары</a></li>
+          <li class="footer__item"><a class="link" href="">Микрофоны и наушники</a></li>
+          <li class="footer__item"><a class="link" href="">Стойки, подставки, рэки</a></li>
+          <li class="footer__item"><a class="link" href="">Тюнеры, метрономы, камертоны</a></li>
         </ul>
       </div>
       <div class="footer__info">
-        <h3>Информация</h3>
+        <h3 class="footer__title" >Информация</h3>
         <ul class="footer__list">
-          <li><a href="">Акции</a></li>
-          <li><a href="">Пользовательское соглашение</a></li>
-          <li><a href="">Возврат товара</a></li>
-          <li><a href="">Подарочные сертификаты</a></li>
+          <li class="footer__item"><a class="link" class="link" href="">Акции</a></li>
+          <li class="footer__item"><a class="link" class="link" href="">Пользовательское соглашение</a></li>
+          <li class="footer__item"><a class="link" class="link" href="">Возврат товара</a></li>
+          <li class="footer__item"><a class="link" class="link" href="">Подарочные сертификаты</a></li>
         </ul>
       </div>
       <div class="footer__socials">
-        <h3>Мы в социальных сетях</h3>
+        <h3 class="footer__title" >Мы в социальных сетях</h3>
         <div class="footer__socials-wrap">
-          <a href=""><img src="./img/svg/socials-youtube.svg" alt=""></a>
-          <a href=""><img src="./img/svg/socials-vk.svg" alt=""></a>
-          <a href=""><img src="./img/svg/socials-tw.svg" alt=""></a>
+          <a class="link footer__svg" href=""><img src="./img/svg/socials-youtube.svg" alt=""></a>
+          <a class="link footer__svg" href=""><img src="./img/svg/socials-vk.svg" alt=""></a>
+          <a class="link footer__svg" href=""><img src="./img/svg/socials-tw.svg" alt=""></a>
         </div>
       </div>
   </footer>
