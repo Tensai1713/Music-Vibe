@@ -28,11 +28,11 @@ p {
 }
 
 .parallax {
-  background-image: url('./img/bg.png'); /* Замените путь на ваш файл */
-  background-attachment: fixed; /* Эффект параллакса */
+  background-image: url('./img/bg.png');
+  background-attachment: fixed; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* Заполнение секции */
+  background-size: cover; 
 }
 
 .link {
