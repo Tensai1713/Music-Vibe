@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fredoka:wght@300..700&display=swap');
 
+
+html { scroll-behavior: smooth; }
+
 ul {
   margin: 0;
   padding: 0;
@@ -8,10 +11,12 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  cursor: default;
 }
 
 p {
   margin: 0;
+  cursor: default;
 }
 
 .btn:hover {
@@ -38,17 +43,38 @@ p {
 .link {
   text-decoration: none;
   color: #212126;
-  fill: #212126;
 }
 
 .link:hover {
   color: #636363;
-  fill: #636363;
 }
 
 .link:active{
   color: #9c9c9c;
 }
+
+
+
+.svg__link {
+  fill: #333333;
+}
+
+
+
+.svg__link:hover {
+  fill: #636363;
+}
+
+.svg__link:active {
+  fill: #9c9c9c;
+}
+
+
+
+
+
+
+
 
 
 
@@ -133,7 +159,15 @@ p {
   display: inline-block;
   margin: 20px 0;
   background-color: #f3f3f3;
+  transition: 0.5s;
 }
+
+.welcome__link:hover {
+  scale: 1.2;
+  color: #f3f3f3;
+  background-color: #636363;
+}
+
 
 .slider__card {
   width: 235px;
@@ -149,6 +183,19 @@ p {
   position: absolute;
   margin: 0 25px;
 }
+
+.slider__favorite-icon {
+  fill: #f3f3f3;
+  transition: 0.5s;
+}
+
+.slider__favorite-icon:hover {
+  fill: #636363;
+  scale: 1.1;
+}
+
+
+
 
 .slider__card-price {
   display: flex;
@@ -167,7 +214,18 @@ p {
   border-radius: 10px;
   font-size: 16px;
   border: none;
+  transition: 0.5s;
 }
+
+/* --------------------------(JS) При нажатии кнопка переворачивается и меняется текст------------------------- */
+
+.slider__card-button:hover {
+  color: #f3f3f3;
+  background-color: #636363;
+  scale: 1.2;
+}
+
+
 
 .slider {
   gap: 40px;
@@ -211,6 +269,7 @@ p {
   text-align: left;
   line-height: 1.6;
   font-size: 24px;
+  margin-top: 100px;
 }
 
 .about__wrap {
@@ -218,12 +277,28 @@ p {
   justify-content: center;
 }
 
-.about__imgs {
-  margin-left: 50px;
+.about__img {
+  margin-left: 100px;
+}
+
+.about__img-wrap {
+  position: relative;
+}
+
+.about__img-wrap::after {
+  content: url('./img/index-img/linkin-park.png');
+  position: absolute;
+  transform: translate(-370px,200px);
+}
+
+.about__img-wrap::before {
+  content: url('./img/index-img/the-hatters.png');
+  position: absolute;
+  transform: translate(230px,100px);
 }
 
 .review {
-  padding-top: 50px;
+  padding-top: 170px;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -300,6 +375,21 @@ p {
   padding: 15px 15px;
   font-family: 'Fredoka', sans-serif;
   font-size: 20px;
+  transition: 0.5s;
+}
+
+.footer__call-btn:hover {
+  scale: 1.020;
+  color: #333333;
+  background-color: #636363;
+  cursor: pointer;
+}
+
+.footer__call-btn:active {
+  scale: 1.020;
+  color: #9c9c9c;
+  background-color: #212126;
+  cursor: pointer;
 }
 
 .footer__title {
@@ -321,6 +411,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__socials-link {
+  transition: 0.5s;
+}
+
+.footer__socials-link:hover {
+  scale: 1.2;
 }
 
 .footer__socials-wrap {
