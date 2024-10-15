@@ -131,52 +131,34 @@ p {
 
 .welcome {
   text-align: center;
-  
 }
 
-
-
-.welcome__title {
-  font-family: 'EB Garamond', serif;
-  font-size: 80px;
-  font-weight: 400;
-  position: relative;
-}
-
-.welcome__title::before {
-  content: url('./img/svg/store.svg');
+.welcome__store-svg {
   position: absolute;
-  transform: translate(-160px,70px);
+  transform: translate(-350px,-30px);
   animation: store 0.5s infinite linear;
+  
 }
 
 @keyframes store {
   from {
-    transform: translate(-160px,70px);
+    transform: translate(-350px,-30px) rotateX(0);
   }
   to {
-    transform: translate(-160px,70px) rotateX(15deg);
+    transform: translate(-350px,-30px) rotateX(15deg);
   }
 }
 
-.welcome__subtitle {
-  font-weight: 400;
-  font-size: 30px;
-  position: relative;
+.welcome__store-svg::before {
+  content: url(./img/svg/note.svg);
+  /* transform: translate(-100px,-70px); */
+  /* animation: note1 1.5s infinite linear; */
 }
 
-.welcome__subtitle::before {
-  position: absolute;
+.welcome__store-svg::after {
   content: url(./img/svg/note.svg);
-  transform: translate(-100px,-70px);
-  animation: note1 1.5s infinite linear;
-}
-
-.welcome__subtitle::after {
-  position: absolute;
-  content: url(./img/svg/note.svg);
-  transform: translate(-510px,-70px);
-  animation: note2 1.5s infinite linear 0.5s;
+  /* transform: translate(-510px,-70px); */
+  /* animation: note2 1.5s infinite linear 0.5s; */
 }
 
 @keyframes note1 {
@@ -232,6 +214,21 @@ p {
     opacity: 0;
   }
 }
+
+.welcome__title {
+  font-family: 'EB Garamond', serif;
+  font-size: 80px;
+  font-weight: 400;
+  position: relative;
+}
+
+.welcome__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  position: relative;
+}
+
+
 
 
 .welcome__link {
@@ -359,12 +356,14 @@ p {
   justify-content: center;
 }
 
-.about__img {
-  margin-left: 100px;
-}
+
 
 .about__img-wrap {
   position: relative;
+  min-height: 420px;
+  min-width: 565px;
+  text-align: left;
+  padding-left: 100px;
 }
 
 .about__img-wrap::after {
@@ -380,7 +379,7 @@ p {
 }
 
 .review {
-  padding-top: 170px;
+  padding-top: 50px;
   text-align: center;
   padding-bottom: 50px;
 }
