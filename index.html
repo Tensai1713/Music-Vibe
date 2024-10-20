@@ -7,39 +7,78 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-  <header class="header ">
+  <header class="header">
     <div class="header__city-wrap">
-    <a class="link" href="./index.html"><img class="logo" src="./img/svg/logo.svg" alt=""></a>
-    <div class="header__city">
-          <img class="header__map-svg" src="./img/svg/map.svg" alt="">
-          <p>г. Москва</p>
-        </div>
+      <a class="link" href="./index.html"><img class="logo" src="./img/svg/logo.svg" alt=""></a>
+      <div class="header__city">
+        <img class="header__map-svg" src="./img/svg/map.svg" alt="">
+        <p>г. Москва</p>
       </div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li><a class="link" href="#about">О нас</a></li>
+        <li><a class="link" href="#!">Акции</a></li>
+        <li><a class="link" href="#!">Категории</a></li>
+        <li><a class="link" href="#footer">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__controls">
+      <a class="link" href="#!">
+        <svg class="svg__link svg__link--favorite" width="50" viewBox="0 0 50 48">
+          <use href="./img/svg/favorite.svg#favorite"></use>
+        </svg>
+      </a>
+      <a class="link" href="#!">
+        <svg class="svg__link svg__link--basket" width="70" viewBox="0 0 70 57">
+          <use href="./img/svg/basket.svg#basket"></use>
+        </svg>
+      </a>
+      <a class="link" href="#!">
+        <svg class="svg__link svg__link--account" width="46" height="46" viewBox="0 0 46 46">
+          <use href="./img/svg/account.svg#account"></use>
+        </svg>
+      </a>
+    </div>
+      <button type="button" class="burger">
+        <div class="bureger__menu">
+          <div class="burger__line"></div>
+        </div>
+      </button>
+      <div class="header__menu">
+        <div class="header__menu-title">
+          <p>МЕНЮ</p>
+          <svg class="icon icon--menu-close" width="30" height="30" viewBox="0 0 16 16">
+            <use href="./img/svg/exit.svg#exit"></use>
+          </svg>
+        </div>
+        <nav class="header__menu-nav">
+          <ul class="header__menu-list">
             <li><a class="link" href="#about">О нас</a></li>
             <li><a class="link" href="#!">Акции</a></li>
             <li><a class="link" href="#!">Категории</a></li>
             <li><a class="link" href="#footer">Контакты</a></li>
           </ul>
+          <div class="header__menu-controls">
+            <a class="link" href="#!">
+              <svg class="svg__link svg__link--favorite" width="50" viewBox="0 0 50 48">
+                <use href="./img/svg/favorite.svg#favorite"></use>
+              </svg>
+            </a>
+            <a class="link" href="#!">
+              <svg class="svg__link svg__link--basket" width="70" viewBox="0 0 70 57">
+                <use href="./img/svg/basket.svg#basket"></use>
+              </svg>
+            </a>
+            <a class="link" href="#!">
+              <svg class="svg__link svg__link--account" width="46" height="46" viewBox="0 0 46 46">
+                <use href="./img/svg/account.svg#account"></use>
+              </svg>
+            </a>
+          </div>
         </nav>
-        <div class="header__controls">
-          <a class="link" href="#!">
-            <svg class="svg__link svg__link--favorite" width="50" viewBox="0 0 50 48">
-              <use href="./img/svg/favorite.svg#favorite"></use>
-            </svg> 
-            </a>
-          <a class="link" href="#!">
-            <svg class="svg__link svg__link--basket" width="70" viewBox="0 0 70 57">
-              <use href="./img/svg/basket.svg#basket"></use>
-            </svg>
-            </a>
-          <a class="link" href="#!">
-            <svg class="svg__link svg__link--account" width="46" height="46" viewBox="0 0 46 46">
-              <use href="./img/svg/account.svg#account"></use>
-            </svg>
-            </a>
-        </div>
+      </div>
+    
   </header>
 
   <main class="main main__bg">
@@ -269,6 +308,8 @@
         </div>
       </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
