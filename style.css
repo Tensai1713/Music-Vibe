@@ -494,6 +494,7 @@ p {
   line-height: 1.6;
   font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
   margin-left: 30px;
+  padding: 0 15px;
 }
 
 .about__wrap {
@@ -772,6 +773,12 @@ p {
     text-align: center;
   }
 
+  .about__img-wrap {
+    margin: 0;
+    padding: 0;
+    min-width: 660px;
+    height: 340px;
+  }
 
   .about__img-wrap::before {
     transform: none;
@@ -897,8 +904,6 @@ p {
   }
 
   .about__img-wrap {
-    margin: auto;
-    padding: 0;
     min-width: 330px;
     height: 675px;
   }
