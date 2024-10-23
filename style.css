@@ -3,6 +3,10 @@
 
 html { scroll-behavior: smooth; }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .none {
   display: none !important;
 }
@@ -26,6 +30,7 @@ p {
 .btn:hover {
   cursor: pointer;
 }
+
 
 .body {
   padding: 0;
@@ -751,6 +756,136 @@ p {
 .footer__dropdown-content::-webkit-scrollbar-thumb:hover {
   background-color: #858585; 
 }
+
+
+.modal__wrap {
+  max-width: 600px;
+  width: 90%;
+  background-color: #f3f3f3;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  border-radius: 10px;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: relative;
+  margin: 15px;
+}
+
+.modal__form-input::placeholder { 
+  color: #f3f3f3;
+  opacity: 0.7;
+}
+
+.modal__title {
+  font-weight: 400;
+  font-size: 26px;
+  color: #F3F3F3;
+  background-color: #333333;
+  padding: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: left;
+}
+
+.modal__form-input {
+  width: 100%;
+  max-width: 560px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333333;
+  color: #f3f3f3;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.modal__form-input:focus-visible {
+  outline: none;
+}
+
+input[type="date" i]::-webkit-calendar-picker-indicator { 
+  padding-right: 15px;
+  background-image: url('./img/svg/calendar.svg');
+}
+
+input::-webkit-datetime-edit { 
+  opacity: 0.7;
+}
+
+.modal__form-comment {
+  width: 100%;
+  max-width: 560px;
+  height: 200px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.modal__btn {
+  width: 100%;
+  max-width: 165px;
+  height: 50px;
+  border: none;
+  background-color: #333;
+  color: #F3F3F3;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.modal__btn:hover {
+  scale: 1.020;
+  color: #333333;
+  background-color: #636363;
+  cursor: pointer;
+}
+
+.modal__btn:active {
+  scale: 1.020;
+  color: #9c9c9c;
+  background-color: #212126;
+  cursor: pointer;
+}
+
+.modal__exit {
+  position: absolute;
+  top: -75px;
+  right: -10px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.modal__exit:hover {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 500; 
+}
+
 /* ---------------------------------------- adaptive ------------------------------------------------- */
 @media (max-width:1300px) {
   

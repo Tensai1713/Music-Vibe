@@ -309,6 +309,25 @@
       </div>
   </footer>
 
+  
+  <div class="modal__wrap none">
+    <h3 class="modal__title">ОБРАТНЫЙ ЗВОНОК</h3>
+    <div class="modal">
+      <form action="" class="modal__form">
+          <input class="modal__form-input" required type="text" name="name" placeholder="Имя">
+          <input class="modal__form-input" required type="tel" name="tel" placeholder="Телефон">
+          <input class="modal__form-input" required type="date" placeholder="Когда перезвонить?" name="date">
+          <textarea class="modal__form-input modal__form-comment" name="comment" placeholder="Комментарий" id=""></textarea>
+          <button type="submit" class="btn modal__btn">Отправить</button>
+      </form>
+      <button class="modal__exit" type="button" class="modal__exit">
+        <svg width="32" viewBox="0 0 32 32">
+          <use href="./img/svg/form-exit.svg#form-exit"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="modal-overlay none"></div>
   <script src="./script.js"></script>
 </body>
 
